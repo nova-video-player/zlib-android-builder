@@ -53,7 +53,7 @@ do
   export CC="${TOOLCHAIN}/bin/${TARGET}${API_LEVEL}-clang"
   export CXX="${TOOLCHAIN}/bin/${TARGET}${API_LEVEL}-clang++"
 
-  export CFLAGS="-fPIC -O3 -Wl,-z,max-page-size=16384"
+  export CFLAGS="-fPIC -O3"
   export LDFLAGS="-Wl,-z,max-page-size=16384"
 
   if [ ! -f "${PREBUILT_DIR}/lib/${ABI}/libz.a" ]
